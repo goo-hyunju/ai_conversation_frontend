@@ -40,7 +40,7 @@ export default function ChatPage() {
     const userMessage = input;
     setInput("");
 
-    const newMessages = [...messages, { sender: 'user', original: userMessage }];
+    const newMessages = [...messages, { sender: 'user' as 'user', original: userMessage }];
     setMessages(newMessages);
 
     try {
